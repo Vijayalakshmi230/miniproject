@@ -1,6 +1,6 @@
 # Ex.No: 13 Machine Learning – MiniProject
-### DATE:                                                                            
-### REGISTER NUMBER : 
+### DATE:  22-04-2024                                                      
+### REGISTER NUMBER : 212221040134
 ### AIM: 
 To write a program to train the classifier for -----------------.
 ###  Algorithm:
@@ -35,8 +35,11 @@ import pandas as pd
 #get the data
 data = pd.read_csv('diabetes.csv')
 data.head()
+```
 
 ![image](https://github.com/Vijayalakshmi230/miniproject/assets/127175503/d77700c2-ebfd-43d6-9a00-a2357ed192fe)
+
+```
 
 print(data.columns)
 
@@ -44,7 +47,11 @@ x = data.drop(['Outcome'], axis=1)
 y = data['Outcome']
 print(x[:5])
 
+```
+
 ![image](https://github.com/Vijayalakshmi230/miniproject/assets/127175503/7564d59a-2ee4-4272-a566-f70548e113c1)
+
+```
 
 #split data
 from sklearn.model_selection import train_test_split
